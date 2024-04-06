@@ -1,0 +1,80 @@
+body{
+    font-family: "Montserrat","Fraunces", serif;
+    font-size: 14px;
+    color:hsl(228, 12%, 48%);
+    background-color:  hsl(30, 38%, 92%);
+    overflow: hidden;
+}
+p,button{
+    margin: 14px;
+}
+.container{
+    width: 50%;
+    height: 100vh;
+    margin:auto;
+}
+.card{
+    width: 600px;
+    height:450px;
+    display: flex;
+    margin-top: 100px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+img{
+    width:300px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.perfume{
+    padding:10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.upper{
+    text-transform: uppercase;
+}
+.lead{
+    font-family:"Fraunces";
+    font-size: 36px;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+}
+.discount{
+    font-family:"Fraunces";
+    font-size: 32px;
+    font-weight:700;
+    color: hsl(158, 36%, 37%);
+}
+.original{
+    text-decoration: line-through;
+    margin-left:20px;
+}
+
+a.button{
+    display: block;
+    color:#fff;
+    margin-left: 15px;
+    width: 230px;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color:hsl(158, 36%, 37%);
+}
+a.button:hover{
+    background-color:hsl(159, 49%, 18%);
+}
+a.button img{
+    width:fit-content;
+    transform: scaleX(-1);
+    vertical-align: -3px;
+    margin-right:5px;
+}
+
+@media (max-width:375px) {
+    .container{
+        display: block;
+    }
+}

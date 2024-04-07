@@ -9,28 +9,28 @@ p,button{
     margin: 14px;
 }
 .container{
-    width: 50%;
-    height: 100vh;
-    margin:auto;
-}
-.card{
-    width: 600px;
-    height:450px;
+    min-width: 600px;
     display: flex;
-    margin-top: 100px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
+    width: 50%;
+    height: 430px;
+    margin:100px auto;
 }
-img{
-    width:300px;
+.image{
+    background: url('../images/image-product-desktop.jpg');
+    background-size: cover;
+    width:50%;
+    max-width:300px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    border: 1px solid black;
 }
-
 .perfume{
+    width:50%;
     padding:10px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    background-color: #fff;
+    border: 1px solid black;
 }
 .upper{
     text-transform: uppercase;
@@ -73,8 +73,22 @@ a.button img{
     margin-right:5px;
 }
 
-@media (max-width:375px) {
+/* Media queries */
+@media  screen and (max-width:650px) {
     .container{
-        display: block;
+        display:block;
+        max-width:200px;
+        margin:25px auto;
+        height:400px;
     }
+    .image{
+        width:450px;
+        height:250px;
+        background-image: url('../images/image-product-mobile.jpg');
+        background-size: cover;
+    }
+    .perfume{
+        width:70%;
+    }
+    
 }

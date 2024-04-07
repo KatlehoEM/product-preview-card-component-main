@@ -22,7 +22,6 @@ p,button{
     max-width:300px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    border: 1px solid black;
 }
 .perfume{
     width:50%;
@@ -30,7 +29,6 @@ p,button{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #fff;
-    border: 1px solid black;
 }
 .upper{
     text-transform: uppercase;
@@ -76,19 +74,34 @@ a.button img{
 /* Media queries */
 @media  screen and (max-width:650px) {
     .container{
-        display:block;
-        max-width:200px;
-        margin:25px auto;
-        height:400px;
+        max-width: 345px;
+        display: block;
+        margin:50px auto;
+        height:200px;
+        width:100%;
     }
     .image{
-        width:450px;
-        height:250px;
         background-image: url('../images/image-product-mobile.jpg');
         background-size: cover;
+        max-width:335px;
+        width:320px;
+        height: 300px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
     }
     .perfume{
-        width:70%;
+        width:300px;
+        max-width: 345px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius:0;
+        border-top-left-radius: 0;
+
     }
-    
+    .lead{
+        font-size: 26px;
+    }
+    .discount{
+        font-size: 22px;
+    }
 }
